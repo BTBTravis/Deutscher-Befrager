@@ -3,6 +3,7 @@
 from sys import exit
 import scriptine as s
 import time
+import yaml
 
 def hello_command(name, repeat=1):
     """Print nice greetings."""
@@ -11,25 +12,41 @@ def hello_command(name, repeat=1):
 
 def ask_command(question):
     """Ask a question to be answered later."""
-    load_store()
-    # TODO: format question for saving
-    # TODO: write question to file
-# path.write_text
-# int(time.time()) 
+    store = load_store()
+    new_key = timestamp()
+    new_val = {'Q': question}
+    store[new_key] = new_val
+    try:
+        save_store(store)
+    except:
+        print("Could not save question to store")
+    print(f"Added {new_val} to store")
+
+def timestamp():
+    return int(time.time()) 
 
 STORE_PATH = '.deutscher-befrager'
+
+def parse_raw_store(raw_txt):
+    try:
+        return yaml.load(raw_txt)
+    except yaml.YAMLError as ymlexcp:
+        print(f"Error parcing your {STORE_PATH}")
+        print(ymlexcp)
 
 def load_store():
     try:
         store_file = s.path(STORE_PATH)
-        raw_store = store_file.text()
-        print(raw_store)
-        # TODO: Parse store data
+        return parse_raw_store(store_file.text())
     except FileNotFoundError:
         print(f"You don't have a {STORE_PATH} yet")
         should_create_file = input("Would you like me to create one y/n?")
         if should_create_file == 'y': create_store(store_file)
 
+def save_store(val):
+    store_file = s.path(STORE_PATH)
+    store_string = yaml.dump(val)
+    store_file.write_text(store_string)
 
 def create_store(file):
     try:
