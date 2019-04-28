@@ -8,6 +8,7 @@ name = "pypi"
 [packages]
 scriptinep3 = "*"
 pyyaml = "*"
+coverage = "*"
 
 [requires]
 python_version = "3.7"
