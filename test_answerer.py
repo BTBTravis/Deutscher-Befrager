@@ -41,4 +41,3 @@ if __name__ == '__main__':
     unittest.main()
 
 
-# pipenv run python -m unittes t -v test**
