@@ -1,4 +1,7 @@
 # Deutscher Befrager
+![Build Status Badge](https://img.shields.io/gitlab/pipeline/BTBTravis/deutscher-befrager.svg)
+
+[![Coverage Status](https://coveralls.io/repos/gitlab/BTBTravis/deutscher-befrager/badge.svg?branch=master)](https://coveralls.io/gitlab/BTBTravis/deutscher-befrager?branch=master)
 
 ## Purpose
 
@@ -20,3 +23,7 @@ yaml lang docs: https://yaml.org/
 unittest: https://docs.python.org/2/library/unittest.html
 guide to unittest: https://realpython.com/python-testing/
 
+## Tips
+
+Remember to write requirements.txt when adding packages:
+`$ pipenv run pip freeze > requirements.txt`
