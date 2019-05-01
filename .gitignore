@@ -1,1 +1,6 @@
 .deutscher-befrager
+.coverage
+build
+deutscher_befrager.egg-info
+dist
+

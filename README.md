@@ -18,16 +18,11 @@ Answer questions: `$ deutscher-befrager answer`
 
 ## Useful links
 
-* scriptine docs: https://pythonhosted.org/scriptine/modules/path.html#scriptine.path
-
-* scriptine port: https://pypi.org/project/scriptinep3/
-
+* click docs: https://click.palletsprojects.com/en/7.x/quickstart/
 * yaml docs: https://pyyaml.org/wiki/PyYAMLDocumentation
-
 * yaml lang docs: https://yaml.org/
-
+* yaml loader info: https://github.com/yaml/pyyaml/wiki/PyYAML-yaml.load(input)-Deprecation
 * unittest: https://docs.python.org/2/library/unittest.html
-
 * guide to unittest: https://realpython.com/python-testing/
 
 ## Tips
@@ -36,7 +31,7 @@ Remember to write requirements.txt when adding packages:
 
 `$ pipenv run pip freeze > requirements.txt`
 
-Run locally with:
+Run commands locally with:
 
 `pipenv run python -m interviewer.core --help`
 
