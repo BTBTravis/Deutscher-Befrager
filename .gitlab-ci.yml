@@ -10,4 +10,4 @@ test:
   - python -m unittest discover ./interviewer/ -v
   - coverage run --source=./interviewer -m unittest discover ./interviewer
   after_script:
-  - coveralls
+  - ./buttons.sh
