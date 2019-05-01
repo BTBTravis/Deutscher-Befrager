@@ -1,15 +1,13 @@
 [[source]]
+name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-name = "pypi"
 
 [dev-packages]
 
 [packages]
-scriptinep3 = "*"
+click = "*"
 pyyaml = "*"
-coverage = "*"
-python-coveralls = "*"
 
 [requires]
 python_version = "3.7"

@@ -1,5 +1,4 @@
 import functools as fun
-import scriptine as s
 from random import shuffle, uniform
 
 def next_question(questions):
@@ -23,7 +22,7 @@ def next_question(questions):
 
     bump_pairs = aged_bump_pairs
         
-    # print(bump_pairs)
+    # click.echo(bump_pairs)
 
     bump_min = fun.reduce(_min, bump_pairs, 0)
     bump_max = fun.reduce(_max, bump_pairs, 0)
@@ -42,10 +41,10 @@ def next_question(questions):
             final_key = key
             break
 
-    # print(f'bump_pairs: {bump_pairs}')
-    # print(f'final_pairs: {final_pairs}')
-    # print(random_bump)
-    # print(final_key)
+    # click.echo(f'bump_pairs: {bump_pairs}')
+    # click.echo(f'final_pairs: {final_pairs}')
+    # click.echo(random_bump)
+    # click.echo(final_key)
     return final_key
 
 def _min(acc, pair):

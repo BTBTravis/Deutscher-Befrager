@@ -35,3 +35,10 @@ Answer questions: `$ deutscher-befrager answer`
 Remember to write requirements.txt when adding packages:
 
 `$ pipenv run pip freeze > requirements.txt`
+
+Run locally with:
+
+`pipenv run python -m interviewer.core --help`
+
+
+

@@ -7,7 +7,7 @@ test:
   - apt-get update -qy
   - apt-get install -y python-dev python-pip
   - pip install -r requirements.txt
-  - python -m unittest discover -v -s tests/
-  - coverage run --source=. -m unittest discover -s tests/
+  - python -m unittest discover ./interviewer/ -v
+  - coverage run --source=./interviewer -m unittest discover ./interviewer
   after_script:
   - coveralls
