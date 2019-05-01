@@ -10,9 +10,9 @@ while I'm on the command line.
 
 ## Usage
 
-Ask questions: `$ de-befrager ask "Wo wohnen Sie?"` 
+Ask questions: `$ befrager ask "Wo wohnen Sie?"` 
 
-Answer questions: `$ deutscher-befrager answer`
+Answer questions: `$ befrager answer`
 
 # Dev
 
