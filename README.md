@@ -3,6 +3,8 @@
 
 [![Coverage Status](https://coveralls.io/repos/gitlab/BTBTravis/deutscher-befrager/badge.svg?branch=HEAD)](https://coveralls.io/gitlab/BTBTravis/deutscher-befrager?branch=HEAD)
 
+Pypi: https://pypi.org/project/deutscher-befrager/
+
 ## Purpose
 
 I'm in the process of learning german but I don't work in german so I made this as a way to practice
@@ -13,6 +15,8 @@ while I'm on the command line.
 Ask questions: `$ befrager ask "Wo wohnen Sie?"` 
 
 Answer questions: `$ befrager answer`
+
+[![asciicast](https://asciinema.org/a/ZTIX1MjabSbr45Fosw62CJDl7.svg)](https://asciinema.org/a/ZTIX1MjabSbr45Fosw62CJDl7)
 
 # Dev
 
